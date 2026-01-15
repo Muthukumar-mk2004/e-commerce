@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendyMart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+
+</head>
+<body>
+        <nav class="navbar">
+        <h1>TrendyMart</h1>
+        <div class="nav-link">
+            <p class="nav-link"><a href="index.html">Home</a></p>
+            <p class="nav-link"><a href="collection.html">Collections</a></p>
+            <p class="nav-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="nav-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar" >
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="sidenav-links">
+            <p class="sidenav-link"><a href="index.html">Home</a></p>
+            <p class="sidenav-link"><a href="collection.html">Collections</a></p>
+            <p class="sidenav-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="msg">
+            <h2>Contact Us</h2>
+            <h4>Name:</h4>
+            <input type="text">
+            <h4>Email:</h4>
+            <input type="text">
+            <h4>Message</h4>
+            <input class="text"><br>
+        </div>
+        <div class="sub">
+            <input  type="submit">
+        </div>
+    </div>
+       <!--footer-->
+    <div class="footer">
+        <div class="fotter-con">
+            <div class="fotter-box1">
+                <h2 class="h2">TrendyMart</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis recusandae, voluptatibus sequi sint soluta?</p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram " style="color:#ffffff;"></i>
+                      <i class="fa-brands fa-youtube" style="color:#ffffff;"></i>
+                        <i class="fa-brands fa-facebook" style="color:#ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2025 TrendyMart.com</p>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var sidenav = document.querySelector(".side-navbar")
+
+function shownavbar(){
+
+    sidenav.style.left="0"
+}
+function closenavbar(){
+    sidenav.style.left="-60%"
+}
+</script>
